@@ -45,7 +45,7 @@ void Init_dictinfo() {
     cDictInfo = rb_define_class("AspellDictInfo", rb_cObject);
 
     //CLASS METHODS============================================================
-    rb_define_singleton_method(cDictInfo, "new", dictinfo_s_new, 0);
+    rb_define_singleton_method(cDictInfo, "new", dictinfo_s_new, -1);
 
     //METHODS =================================================================
     rb_define_method(cDictInfo, "name", dictinfo_name, 0);
